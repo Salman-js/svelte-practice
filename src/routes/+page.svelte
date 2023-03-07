@@ -1,17 +1,16 @@
 <script>
+  import Main from "./Main.svelte";
+
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<meta name="description" content="Svelte practice" />
 </svelte:head>
 
-<section class='App'>
-
+<section>
+    <Main />
 </section>
  
 <style>
-    .App {
-        @apply w-full h-screen bg-blue-500;
-    }
 </style>
