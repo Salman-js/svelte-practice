@@ -43,13 +43,13 @@
 	}
 
 	.counter button {
+		@apply bg-white;
 		width: 2em;
 		padding: 0;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		border: 0;
-		background-color: transparent;
 		touch-action: manipulation;
 		font-size: 2rem;
 	}
