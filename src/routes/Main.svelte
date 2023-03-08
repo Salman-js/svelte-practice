@@ -12,7 +12,7 @@
    {:else}
    <h1 class:italy>Not {text}</h1> 
    {/if}
-   {#each countries as country}
+   {#each countries as country, index (index)}
    <h1 class:italy>{country + ' '} </h1> 
    {/each}
 </div>
