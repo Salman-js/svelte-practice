@@ -7,6 +7,7 @@
   import ReactDec from './ReactDec.svelte';
   import './styles.css';
   import OnMount from './OnMount.svelte';
+  import DynamicComp from './DynamicComp.svelte';
 
   const fname = 'Salman';
   const name = {
@@ -17,6 +18,7 @@
 
 <div class="app">
   <main>
+    <svelte:component this={DynamicComp} />
     <PropsComp fname="Salman" lname="Mohammed" />
     <PropsComp {fname} />
     <PropsComp {...name} />
