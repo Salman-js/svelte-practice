@@ -6,6 +6,7 @@
   import PropsComp from './PropsComp.svelte';
   import ReactDec from './ReactDec.svelte';
   import './styles.css';
+  import OnMount from './OnMount.svelte';
 
   const fname = 'Salman';
   const name = {
@@ -21,6 +22,7 @@
     <PropsComp {...name} />
     <ContextParent />
     <SlotParent />
+    <OnMount />
   </main>
 </div>
 
