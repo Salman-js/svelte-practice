@@ -25,4 +25,7 @@
 </div>
 
 <style>
+  :global(h3) {
+    @apply text-red-500;
+  }
 </style>
