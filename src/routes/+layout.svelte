@@ -1,4 +1,5 @@
 <script>
+  import SlotParent from './SlotParent.svelte';
   import ContextParent from './ContextParent.svelte';
   import Count from './Count.svelte';
   import Form from './Form.svelte';
@@ -19,6 +20,7 @@
     <PropsComp {fname} />
     <PropsComp {...name} />
     <ContextParent />
+    <SlotParent />
   </main>
 </div>
 
