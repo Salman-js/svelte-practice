@@ -1,6 +1,7 @@
 <script>
   import { setContext } from 'svelte';
   import CompEventChild from './CompEventChild.svelte';
+  import CompEventForward from './CompEventForward.svelte';
   import ContextChild from './ContextChild.svelte';
 
   const uname = 'theartist';
@@ -21,4 +22,9 @@
   {#if !show}
     <button on:click={() => (show = true)}>Show</button>
   {/if}
+  <CompEventForward
+    on:greet={(data) => {
+      alert(`Hello ${data.detail}`);
+    }}
+  />
 </main>
