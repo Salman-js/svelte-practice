@@ -1,7 +1,7 @@
 <script>
   import SlotParent from './SlotParent.svelte';
   import ContextParent from './ContextParent.svelte';
-  import Count from './Count.svelte';
+  import Count, { getCount } from './Count.svelte';
   import Form from './Form.svelte';
   import PropsComp from './PropsComp.svelte';
   import ReactDec from './ReactDec.svelte';
@@ -19,6 +19,10 @@
 <div class="app">
   <main>
     <svelte:component this={DynamicComp} />
+    <button on:click={() => alert(getCount())}>Get Module Count</button>
+    <Count />
+    <Count />
+    <Count />
     <PropsComp fname="Salman" lname="Mohammed" />
     <PropsComp {fname} />
     <PropsComp {...name} />
