@@ -8,6 +8,10 @@
   import './styles.css';
   import OnMount from './OnMount.svelte';
   import DynamicComp from './DynamicComp.svelte';
+  import StoreDisplay from './StoreDisplay.svelte';
+  import StoreUpdate from './StoreUpdate.svelte';
+  import StoreReset from './StoreReset.svelte';
+  import StoredTimer from './StoredTimer.svelte';
 
   const fname = 'Salman';
   const name = {
@@ -23,6 +27,10 @@
     <Count />
     <Count />
     <Count />
+    <StoreDisplay />
+    <StoreUpdate />
+    <StoreReset />
+    <StoredTimer />
     <PropsComp fname="Salman" lname="Mohammed" />
     <PropsComp {fname} />
     <PropsComp {...name} />
